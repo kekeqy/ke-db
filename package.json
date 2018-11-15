@@ -1,8 +1,10 @@
 {
   "name": "ke-db",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node.js访问多种数据库的更高层次的抽象封装，能有效屏蔽不同数据库的实现细节差异，目前支持PostgreSQL、MySQL、SQLite三种数据库。",
-  "main": "index.js",
+  "main": "./dist/Index.js",
+  "types": "./dist/Index.d.ts",
+  "typings": "./dist/Index.d.ts",
   "scripts": {
     "build": "tsc"
   },
