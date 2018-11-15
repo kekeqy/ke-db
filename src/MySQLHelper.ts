@@ -4,6 +4,7 @@ import { BatchItem } from "./BatchItem";
 import { ExecuteType } from './ExecuteType';
 import { ExecuteResult } from './ExecuteResult';
 
+/** MySQLHelper帮助类 */
 export class MySQLHelper extends DBHelper {
     /**
      * 实例化一个MySQL数据库访问帮助类对象
