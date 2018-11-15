@@ -1,4 +1,5 @@
 import { BatchItem } from "./BatchItem";
+import { ExecuteResult } from "./ExecuteResult";
 
 /** 数据库帮助类 */
 export abstract class DBHelper {
@@ -32,5 +33,5 @@ export abstract class DBHelper {
      * 执行SQL批处理，返回所有SQL执行结果的集合
      * @param batches SQL批处理
      */
-    public abstract async executeBatch(batches: BatchItem[]): Promise<any[]>;
+    public abstract async executeBatch(batches: BatchItem[]): Promise<ExecuteResult[]>;
 }

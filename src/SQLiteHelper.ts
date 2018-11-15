@@ -119,8 +119,8 @@ export class SQLiteHelper extends DBHelper {
      * 执行SQL批处理，返回所有SQL执行结果的集合
      * @param batches SQL批处理
      */
-    public async executeBatch(batches: BatchItem[]): Promise<any[]> {
-        let out: any[];
+    public async executeBatch(batches: BatchItem[]): Promise<ExecuteResult[]> {
+        let out: ExecuteResult[];
         let errMsg: string;
         let db: sqlite3.Database;
         try {
