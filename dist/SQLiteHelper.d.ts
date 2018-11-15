@@ -1,5 +1,6 @@
 import { DBHelper } from "./DBHelper";
 import { BatchItem } from "./BatchItem";
+import { ExecuteResult } from './ExecuteResult';
 /** SQLite数据库帮助类 */
 export declare class SQLiteHelper extends DBHelper {
     /**
@@ -29,5 +30,5 @@ export declare class SQLiteHelper extends DBHelper {
      * 执行SQL批处理，返回所有SQL执行结果的集合
      * @param batches SQL批处理
      */
-    executeBatch(batches: BatchItem[]): Promise<any[]>;
+    executeBatch(batches: BatchItem[]): Promise<ExecuteResult[]>;
 }
