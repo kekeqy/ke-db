@@ -42,3 +42,5 @@ Node.js访问多种数据库的更高层次的抽象封装，能有效屏蔽不�
     item = new db.BatchItem(db.Scalar, sql, parameters);
     batches.push(item);
     let result: db.ExecuteResult[] = await ctx.executeBatch(batches);
+## 帮助
+        在使用中碰到任何问题，你都可以提交Issue或者加我QQ314313534，我会在第一时间予以解答。
